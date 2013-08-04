@@ -18,9 +18,11 @@ group :development do
 end
 
 group :test do 
+  gem 'cucumber-rails'
 end
 
 group :development, :test do
+  gem 'rspec-rails'
   gem 'sqlite3'
   gem 'debugger'
 end
