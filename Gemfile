@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+# ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'oj'
 
 group :development do
   gem 'better_errors'
@@ -18,10 +19,13 @@ group :development do
 end
 
 group :test do 
-  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'cucumber-rails', git: 'git@github.com:cucumber/cucumber-rails.git', branch: 'master_rails4_test'
+  # gem 'cucumber-rails'
 end
 
 group :development, :test do
+  gem 'multi_json'
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'debugger'
