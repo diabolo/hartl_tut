@@ -3,7 +3,6 @@ Feature: Static pages
   I want some static pages
   So I can quickly implement things like help and about
 
-  @wip
   Scenario: Help page
     When I view the static help page
     Then I should see a static help page
