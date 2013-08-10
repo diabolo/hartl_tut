@@ -24,11 +24,14 @@ group :test do
 end
 
 group :development, :test do
-  gem 'multi_json'
+  gem 'multi_json', git: 'git@github.com:intridea/multi_json.git'
+  # gem 'multi_json'
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'debugger'
-  # gem 'jazz_hands'
+  gem 'jazz_hands'
+  gem 'haml'
+  gem 'haml-rails'
 end
 
 group :doc do
