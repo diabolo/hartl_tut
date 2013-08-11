@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'pg', '0.15.1'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'better_errors'

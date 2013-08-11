@@ -3,16 +3,16 @@ Feature: Static pages
   I want some static pages
   So I can quickly implement things like help and about
 
-  Scenario: Help page
-    When I view the static help page
-    Then I should see a static help page
-    And the page title should contain "help"
+  Scenario Outline: Static Pages
+    When I view the static <name> page
+    Then I should see a static <name> page
+    And the page title should contain <name>
+    And the page title should start with the site prefix
 
-  Scenario: About page
-    When I view the static about page
-    Then I should see a static about page
-
-  Scenario: Contact page
-    When I view the static contact page
-    Then I should see a static contact page
+    Examples:
+      | name    |
+      | home    |
+      | help    |
+      | about   |
+      | contact |
 

@@ -1,10 +1,10 @@
 module ApplicationHelper
 
   def full_title(title)
-    title.empty? ? base_title : "#{base_title} | #{title}"
+    title.empty? ? site_prefix : "#{site_prefix} | #{title}"
   end
 
-  def base_title
+  def site_prefix
     "Hartl Tutorial"
   end
 end
