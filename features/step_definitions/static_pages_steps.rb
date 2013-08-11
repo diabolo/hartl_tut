@@ -1,6 +1,6 @@
 
 When(/^I view the static (\w+) page$/) do |static_page|
-  visit eval("static_pages_#{static_page}_path")
+  visit eval("#{static_page}_path")
 end
 
 Then(/^the page title should contain (.*)$/) do |title|
