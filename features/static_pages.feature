@@ -15,4 +15,5 @@ Feature: Static pages
       | help    |
       | about   |
       | contact |
+      | signup  |
 
